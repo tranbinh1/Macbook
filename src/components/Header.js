@@ -4,6 +4,11 @@ import React from "react";
 import "../Style/base.css";
 
 export default function Header() {
+
+    function toggleMenuMobile() {
+              
+    }
+
   return (
     <div id="header" className="fixed">
       <div className="container">
@@ -17,7 +22,7 @@ export default function Header() {
         </a>
         <span
           className="show-mobile hide-tablet absolute right "
-          onclick="toggleMenuMobile();"
+          onClick={toggleMenuMobile}
           id="menubutton"
         ></span>
         <div className="right cart-total-right">
